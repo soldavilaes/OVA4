@@ -21,4 +21,22 @@ $('#tabs-nav li').click(function(){
 });
 
 
+/*-----------------------------
+* PESTAÑA 4 - ITEM 1 - CIRCULO
+-------------------------------*/
 
+$(document).ready(function()
+{
+
+$('.js-notice').addClass('show-notice');
+
+$('.js-open-notice').on('click', function(){
+    $('.js-notice').addClass('show-notice');
+});    
+    
+
+$('.js-close-notice').on('click', function(){
+    $('.js-notice').removeClass('show-notice');
+});
+    
+});

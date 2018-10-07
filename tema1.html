@@ -24,95 +24,226 @@
 <body>
 	<div id="content">
 
-<div id="loader">
+<!---<div id="loader">
   <div class="count">100%</div>
+</div>--->
+
+<div id ="cabecera">
+	<img src="iconoPrin4.png"/>
+	<pre><h2>              CAMBIANDO EL ESTADO DE LAS VARIABLES</h2></pre>
 </div>
-			
-		<div id ="cabecera">
-			<img src="iconoPrin4.png"/>
-			<pre><h2>              CAMBIANDO EL ESTADO DE LAS VARIABLES</h2></pre>
-		</div>
 
-		<div id="escenario">
-			<pre><h3 id="pointer">       <i class="fa fa-list"></i> TEMA 4</h3> </pre>
-			<p>Hacer clic en las pestañas para continuar </p><img id="iPestaña" src="pestañas.png"/>
+<div id="escenario">
+	<pre><h3 id="pointer">       <i class="fa fa-list"></i> TEMA 4</h3> </pre>
+	<p>Hacer clic en las pestañas para continuar </p><img id="iPestaña" src="pestañas.png"/>
 
-			<!--  <div id="contenidoGeneral">-->
+	<!--  <div id="contenidoGeneral">-->
 
-				<!-- PESTAÑAS -->      
-     <div id="tabs">
-      <ul id="tabs-nav">
-      	<li class="pestaña9"><a href="#tab9">9</a></li>
-        <li class="pestaña8"><a href="#tab8">8</a></li>
-        <li class="pestaña7"><a href="#tab7">7</a></li>
-        <li class="pestaña6"><a href="#tab6">6</a></li>
-        <li class="pestaña5"><a href="#tab5">5</a></li>
-        <li class="pestaña4"><a href="#tab4">4</a></li>
-        <li class="pestaña3"><a href="#tab3">3</a></li>
-        <li class="pestaña2"><a href="#tab2">2</a></li>
-        <li class="pestaña1"><a href="#tab1">1</a></li>
-      </ul> <!-- tabs-nav -->
-      <div id="tabs-content">
-      
-      <!--PESTAÑA 1-->
-        <div id="tab1" class="contentt">
-							
-						</div>
-						<!-- PESTAÑA 2-->
-						<div id="tab2" class="contentt">  
-							
-						</div>
-						<!-- PESTAÑA 3-->
-						<div id="tab3" class="contentt">
-							
-						</div>	
+		<!-- PESTAÑAS -->      
+		<div id="tabs">
+			<ul id="tabs-nav">
+				<li class="pestaña9"><a href="#tab9">9</a></li>
+				<li class="pestaña8"><a href="#tab8">8</a></li>
+				<li class="pestaña7"><a href="#tab7">7</a></li>
+				<li class="pestaña6"><a href="#tab6">6</a></li>
+				<li class="pestaña5"><a href="#tab5">5</a></li>
+				<li class="pestaña4"><a href="#tab4">4</a></li>
+				<li class="pestaña3"><a href="#tab3">3</a></li>
+				<li class="pestaña2"><a href="#tab2">2</a></li>
+				<li class="pestaña1"><a href="#tab1">1</a></li>
+			</ul> <!-- tabs-nav -->
+			<div id="tabs-content">
 
-						<!-- PESTAÑA 4-->
-						<div id="tab4" class="contentt">
-							
-						</div>
-						<!-- PESTAÑA 5 -->	
-						<div id="tab5" class="contentt">
-											
-						</div>
-						<!--PESTAÑA 6-->
-						<div id="tab6" class="contentt">
-							
+				<!--PESTAÑA 1-->
+				<div id="tab1" class="contentt">
+					<img id="titulo1" src="titulo1.png">
+					<img id="profesora" src="profesora.png">
+					<div class="mybox"><span>La asignación de valores a variables se lleva a cabo a través de la expresión set!, la cual está conformada por dos parámetros como se muestra a continuación:
+					</span></div>
+					<div class="recuadro3 verde">(set! var exp)</div>
+
+					<main>
+						<section>
+							<!-- CAJA 1 -->
+							<div class="cuadroT">
+								<div class="contents">
+									<h2>(<b>Var:</b>)</h2>
+									<p id="funcion1"><span><br>Es una variable fija</span></p>
 								</div>
-								<!--PESTAÑA 7-->
-								<div id="tab7" class="contentt">
-									
+							</div>
+
+							<!-- CAJA 2 -->
+							<div class="cuadroT2">
+								<div class="contents2">
+									<h2>(<b>Exp:</b>)</h2>
+									<p id="funcion2"><span><br>Es una expresión.</span></p>
 								</div>
-								<!--PESTAÑA 8-->
-								<div id="tab8" class="contentt">
-									
-								</div>
-								<!--PESTAÑA 9-->
-								<div id="tab9" class="contentt">
-									
-								</div>
+							</div>
+						</section>
+					</main>
+
+				</div>
+				<!-- PESTAÑA 2-->
+				<div id="tab2" class="contentt">  
+					<div class='containers'>
+						<p id="conceptoLocal"><span>Una característica relevante de la expresión set! es el efecto de su evaluación. En primera instancia de la evaluación de la expresión set! se determina el valor de <b>exp</b>, por ejemplo <b>V</b>, y después de esto la definición de <b>var</b> cambia de la siguiente manera:</span></p>
+					</div>
+
+					<div class="recuadro yellow">(define var V)</div>
+					<img id="muñecaR" src="muñecaR.png">
+					<div class="notice-wrapper">
+						<div class="notice js-notice">
+							<div class="notice-icon"></div>
+							<div class="notice-text">
+								<h5 class="notice-title">A partir de esta definición se puede observar el efecto, correspondiente a que todas las referencias a var en una evaluación se intercambian por V, perdiendo su valor anterior. De acuerdo a esto, la expresión set! es un operador de efecto que no retorna un valor pero permite cambiar el valor de una variable.</h5>
 							</div>
 						</div>
 					</div>
+
+				</div>
 				
-					<script src='https://raw.githubusercontent.com/WickyNilliams/enquire.js/master/dist/enquire.min.js'></script>
-					<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
-					<script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js'></script>
-					<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-					<script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js'></script>
-					
+				<!-- PESTAÑA 3-->
+				<div id="tab3" class="contentt">
+					<p id="indicacion2"><span>Haz clic sobre las pestañas verticales para observar los ejemplos.</span></p>
 
-            <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
-          <script  src="page.js"></script>
+					<div class="tabbed-content clearfix">
+						<!--Tabbed navigation-->
+						<ul class="tabss">
+							<li class="tab-link current" data-tab="text-tab">Ejemplo 1</li>
+							<li class="tab-link" data-tab="video-tab">Evaluación manual</li>
+							<li class="tab-link" data-tab="audio-tab">Ejemplo 2</li>
+							<li class="tab-link" data-tab="ejemplo3-tab">Ejemplo 3</li>
+						</ul>
+						<!--Wrapper to contain interchanging content-->
+						<div class="tabs-wrapper">
+							<!--textual tab content-->
+							<div id="text-tab" class="tab-content current">
+								<div class="defAb">
+									<h1>EJEMPLO 1</h1>
+								</div>
+								<p id="text1"> <span> Observe la definición y la expresión local que se muestra a continuación.</span></p>
+								<img id="lupa" src="lupa.png">
+								<div id="fondo4" class="i17">(define x 3)<br>(local ( <br>(define z (set! x (+ x 2)))) <br>x)</div>
+
+								<div class="perspective">
+									<div class="note">
+										<p id="pDefLocal"><span>En primer lugar, la definición establece que X es 3. Después de esto, La definición local contiene una definición para z y su cuero es x, lo que indica que en un inicio el valor de la expresión local era 3, sin embargo al contener la expresión set! el valor de x cambió. Para conocer su nuevo valor se realizara la evaluación del programa paso a paso hasta llegar al resultado final.</span></p>
+									</div>
+									
+
+								</div> 
+							</div>
+
+							<!--video tab content-->
+							<div id="video-tab" class="tab-content">
+								<div class="textT2">
+									<h1>PASO 1</h1>
+								</div>
+								<p id="tex2"><span>Inicialmente no se tiene en cuenta la definición local en la evaluación, por lo cual la
+								función toma la siguiente forma:</span></p>
+								<div class="card3 card-secondary3">
+									(define x 3) <br>
+									(define z (set! x (+ x 2))) <br>
+									X
+								</div>
+
+								<div class="textT3">
+									<h1>PASO 2</h1>
+								</div>
+
+								<p id="tex3"><span>Seguidamente se debe determinar el valor de la expresión set!: <b>(set! X (+ x 2))</b>, evaluando el lado derecho de esta asignación <b>(+ x 2)</b>, a partir de lo cual x toma el valor de 5, debido a que su valor inicial es 3.</span></p>
+
+								<div class="card4 card-secondary4">
+									(define x 3) <br>
+									(define z (set! x 5))<br>
+									X
+								</div>
+
+							</div>
+							<!--audio tab content-->
+							<div id="audio-tab" class="tab-content">
+
+								<div class="textT4">
+									<h1>PASO 3</h1>
+								</div>
+
+								<div class="box2">
+									<p id="paso3"><span>Se produce el efecto de la expresión set!, el cual consiste en cambiar el valor de la variable x. A partir de esto el valor de x ya no es 3 sino 5, y esta modificación se <br>evidencia en la definición de x.</span></p>
+								</div>
+
+								<div id="fondo2" class="i18">(define x 5) <br>
+									(define z (void))<br>
+								X</div>
+								<div class="evidence-description2">
+									El valor de <b>set!</b> es (void) el cual es correspondiente a un valor invisible, por lo que al
+									intercambiar la expresión set! con el valor invisible la evaluación ha terminado.
+									Finalmente se puede observar en esta estas definiciones que el resultado es 5, ya
+									que la primera definición se muestra que el valor actual de x es 5 y la última
+									expresión es x.
+								</div>
+								
+							</div> 
+							
+
+							
+							<div id="ejemplo3-tab" class="tab-content">
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- PESTAÑA 4-->
+				<div id="tab4" class="contentt">
 
 
-					<script  src="step3P4.js"></script>
 
-					<!--<script src="lightbox.js"></script>-->
-					<script  src="tema1.js"></script>
-					<script  src="pestaña2.js"></script>
-					<script  src="boton.js"></script>
-					<script  src="IndexPestaña4.js"></script>
-					<script  src="indexP7.js"></script>
-				</body>
-				</html>
+				</div>
+
+			</div>
+			<!-- PESTAÑA 5 -->	
+			<div id="tab5" class="contentt">
+
+			</div>
+			<!--PESTAÑA 6-->
+			<div id="tab6" class="contentt">
+
+			</div>
+			<!--PESTAÑA 7-->
+			<div id="tab7" class="contentt">
+
+			</div>
+			<!--PESTAÑA 8-->
+			<div id="tab8" class="contentt">
+
+			</div>
+			<!--PESTAÑA 9-->
+			<div id="tab9" class="contentt">
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src='https://raw.githubusercontent.com/WickyNilliams/enquire.js/master/dist/enquire.min.js'></script>
+<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js'></script>
+
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script  src="page.js"></script>
+
+
+<script  src="step3P4.js"></script>
+
+<!--<script src="lightbox.js"></script>-->
+<script  src="tema1.js"></script>
+<script  src="pestaña2.js"></script>
+<script  src="boton.js"></script>
+<script  src="IndexPestaña4.js"></script>
+<script  src="indexP7.js"></script>
+
+</body>
+</html>
