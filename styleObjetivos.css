@@ -335,8 +335,8 @@ header h1 {
 
 .bg-items {
   padding: 10px;
-  width  : 300px;
-  height : 190px;
+  width  : 315px;
+  height : 3200px;
   margin : 14px 40px;
   background-color: #FF8000;
   float  : left;
@@ -352,9 +352,11 @@ header h1 {
   position: relative;
   overflow: hidden;
   background-color: #102B46;
+  left: 2px;
 }
 
 .details {
+  left: 5px;
   background-color : rgba(0,0,0,0.5);
   width            : 280px;
   height           : 170px;
@@ -754,6 +756,7 @@ header.active, .intro.active, #menu-left.active, footer.active {
   section {margin-top: 57px}
   article .box .feed p {font-size: 12px;}
 }*/
+/*CARGUE DE PAGINA*/
 
 #loader{
   position:absolute;
@@ -793,3 +796,125 @@ header.active, .intro.active, #menu-left.active, footer.active {
 @keyframes count { to { transform:scale3d(1,1,1); } }
 @keyframes revealTop { to {transform:translate3d(0,-100%,0);} }
 @keyframes revealBot { to {transform:translate3d(0, 100%,0);} }
+
+/*OBJETIVOS*/
+
+.container {
+  width  : 900px;
+  margin : 0 auto;
+}
+
+.container:after{
+  clear   : both;
+  display : table;
+  content : '';
+}
+
+.bg-items {
+  padding: 10px;
+  width: 320px;
+height: 320px;
+  margin : 110px  30px;
+  background-color: #f7054d;
+  float  : left;
+  left: 70px;
+  top: 10px;
+  cursor : pointer;
+  box-shadow : 10px 9px 10px 0px rgba(0,0,0,0.5);
+}
+
+.items {
+  width: 295px;
+height: 300px;
+  position: relative;
+  overflow: hidden;
+  background-color: #f7054d;
+}
+
+.details {
+  background-color : rgba(0,0,0,0.5);
+width: 300px;
+height: 300px;
+  padding          : 5px;
+  top : 0px;
+  left: 0;
+  font-family : 'Open Sans', sans-serif;
+  color       : #fff;
+  opacity : 0;
+  transition : opacity .8s;
+}
+
+.details h3 {
+  margin-bottom : 20px;
+}
+
+.details h6 {
+  text-align : right;
+  margin-top : 40px;
+}
+
+.details p {
+  font-size : 18px;
+  font-style: italic;
+  text-align: center;
+  line-height : 20px;
+  margin-top : 30px;
+}
+
+.items:hover .details {
+  opacity : 1;
+  transition : opacity .2s .3s;
+}
+
+.items div {
+  position : absolute;
+}
+
+/* one */
+
+.one {
+  left   : 100%;
+  bottom : 100%;
+  width : inherit;
+  height: inherit;
+  background-color : #f7054d;
+  transition   : all .3s;
+}
+
+.items:hover .one {
+  transition   : all .3s;
+  left   : 0;
+  bottom : 0;
+}
+
+/* two */
+
+.two {
+  width : inherit;
+  height: inherit;
+  background-color : #f7054d;
+  transition   : all .3s;
+  left   : 0;
+  bottom : 100%;
+}
+
+.items:hover .two {
+  transform : rotate(180deg);
+  left   : 0;
+  bottom : 0;
+  transition   : all .3s;
+}
+
+.titulo h1 {
+    position: fixed;
+    bottom: 0;
+    margin: 440px 310px;
+    display: block;
+    animation-duration: 3s;
+    font-family: 'Sansita';
+    font-size: 45px;
+    color: #000000;
+    text-align: center;
+    line-height: 100px;
+    text-shadow: 0 1px 0 #66ccff, 0 2px 0 #66ccff, 0 3px 0 #66ccff, 0 4px 0 #66ccff, 0 5px 0 #ff66cc, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent, 0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, .6);
+}
