@@ -111,8 +111,13 @@
 						<ul class="tabss">
 							<li class="tab-link current" data-tab="text-tab">Ejemplo 1</li>
 							<li class="tab-link" data-tab="video-tab">Evaluación manual</li>
-							<li class="tab-link" data-tab="audio-tab">Ejemplo 2</li>
-							<li class="tab-link" data-tab="ejemplo3-tab">Ejemplo 3</li>
+							<li class="tab-link" data-tab="audio-tab">Evaluación manual</li>
+							<li class="tab-link" data-tab="ejemplo3-tab">Begin</li>
+							<li class="tab-link" data-tab="ejemplo4-tab">Begin</li>
+							<li class="tab-link" data-tab="ejemplo5-tab">Ejemplo Set! y Begin</li>
+							<li class="tab-link" data-tab="ejemplo6-tab">Evaluación manual</li>
+							<li class="tab-link" data-tab="ejemplo7-tab">Evaluación manual</li>
+							<li class="tab-link" data-tab="ejemplo8-tab">Evaluación manual</li>
 						</ul>
 						<!--Wrapper to contain interchanging content-->
 						<div class="tabs-wrapper">
@@ -167,7 +172,7 @@
 									<h1>PASO 3</h1>
 								</div>
 
-								<div class="box2">
+								<div class="boxx2">
 									<p id="paso3"><span>Se produce el efecto de la expresión set!, el cual consiste en cambiar el valor de la variable x. A partir de esto el valor de x ya no es 3 sino 5, y esta modificación se <br>evidencia en la definición de x.</span></p>
 								</div>
 
@@ -187,8 +192,95 @@
 
 							
 							<div id="ejemplo3-tab" class="tab-content">
+								<figure>
+									<img id="pensante" src="pensar.png">
+									<figcaption contenteditable>Begin es una expresión que consta de la palabra reservada begin seguida de una secuencia de n+1 expresiones como se muestra a continuación:
+									</figcaption>
+									<div class="cTexto">(begin exp-1 <br> ... <br> exp-n <br> exp)
+									</div>
+									<p id="txt"><span>En la expresión begin, inicialmente se establecen los valores de las expresiones en orden y finalmente el valor de la última expresión es el valor de la expresión inicial. Básicamente la expresión begin permite ejecutar varias expresiones y retornar un valor.</span></p>
+								</figure>
+
 
 							</div>
+
+							<div id="ejemplo4-tab" class="tab-content">
+								<div class="textT5">
+									<h1>VENTAJAS DE UTILIZAR BEGIN</h1>
+								</div>
+								<img id="uno" src="uno.png">
+								<p id="ventaja1"><span>La expresión begin simplifica las funciones.</span></p>
+								<img id="dos" src="dos.png">
+								<p id="ventaja2"><span>La expresion begin propone un ordenamiento directo de la evaluación.</span></p>
+								<div class="textT6">
+									<h1>EJEMPLO ANTERIOR CON BEGIN</h1>
+								</div>
+								<div class="cTexto1">(define x 3)<br> (begin (set! x (+ x 2))<br>x)
+								</div>
+								<p id="ejemBegin"><span>Esta función al implementar la expresión begin permite retornar el valor de x, el cual es en este caso 5.</span></p>
+							</div>
+
+							<div id="ejemplo5-tab" class="tab-content">
+								<div class="textT7">
+									<h1>EJEMPLO SET! Y BEGIN</h1>
+								</div>
+
+								<div class="card5 card-secondary5">
+									Considere la función swap-x-y, la cual recibe dos valores y realiza dos Set!.
+								</div>
+								<img id="cinta" src="cinta.png">
+								<div class="cTexto2"><br>(define x 3)<br>(define y 5)<br>(define (swap-x-y x0 y0)<br>(begin<br>(set! x y0)<br>(set! y x0)))<br><br>(swap-x-y x y)
+								</div>
+								<img id="muñecaRosa" src="muñecaRosa.png">
+							</div>
+
+
+
+							<div id="ejemplo6-tab" class="tab-content">
+								<div class="textT8">
+									<h1>EVALUACIÓN MANUAL</h1>
+								</div>
+								<p id="evaM"><span><b>1.</b> Debido a que (swap-x-y x y) es una aplicación de función, es necesario evaluar los parámetros o variables. Por lo cual reemplazamos las variables con sus valores (actuales):</span></p>
+								
+								<div id="fondo5" class="i18">((define x 3)<br>
+									(define y 5)<br>
+									(define (swap-x-y x0 y0)<br>
+									(begin<br>
+									(set! x y0)<br>
+									(set! y x0)))<br>
+								(swap-x-y 3 5)</div>
+								<img id="programador" src="programador.png">
+
+							</div>
+
+
+							<div id="ejemplo7-tab" class="tab-content">
+								
+								<div class="evidence-description3">
+									<b>2.</b> Después de esto, se actualiza el valor x por el de y y el valor de y por el de x.
+								</div>
+
+								<div class="box2">
+									<pre><code>
+										(define x 3)
+										(define y 5)
+										(define (swap-x-y x0 y0)
+										(begin
+										(set! x y0)
+										(set! y x0)))
+
+										(begin
+										(set! x 3)
+										(set! y 5))
+									</code></pre> 
+								</div>
+								<img id="compu" src="compu.png">
+							</div>
+
+							<div id="ejemplo8-tab" class="tab-content">
+								
+							</div>
+
 						</div>
 					</div>
 				</div>

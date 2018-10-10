@@ -465,7 +465,7 @@ main section .cuadroT {
   cursor: pointer;
   background: linear-gradient(to right, #ccffff 0%, #baffc9 100%);
   width: 240px;
-  box-shadow: 0 8px 45px 3px rgba(0, 0, 0, 0.13);
+  z-index: 0;
 }
 
 main section .cuadroT .contents {
@@ -546,9 +546,9 @@ main section .cuadroT:nth-child(1):hover > .contents p {
   cursor: pointer;
   background: linear-gradient(to right, #ccffff 0%, #baffc9 100%);
   width: 240px;
-  box-shadow: 0 8px 45px 3px rgba(0, 0, 0, 0.13);
   top: -110px;
   left: 370px;
+  z-index: 0;
 }
 
 main section .cuadroT2 .contents2 {
@@ -1281,7 +1281,7 @@ color: #000000;
 
 .tabs-wrapper {
   float: left;
-  margin: -172px 175px;
+  margin: -387px 185px;
   height: 580px;
 }
 
@@ -1759,7 +1759,7 @@ line-height: 100px;
                0 10px 10px rgba(0, 0, 0, .6);
 }
 
-.box2{
+.boxx2{
   margin: 35px -5px;
   width: 695px;
   min-height: 85px;
@@ -1779,7 +1779,7 @@ line-height: 100px;
  
 }
 
-.box2:before{
+.boxx2:before{
   content:'';
   width: 25px;
   height: 20px;
@@ -1807,7 +1807,7 @@ line-height: 100px;
                     translate(-13px,-13px);
 }
  
-.box2:after{
+.boxx2:after{
   content: '';
   z-index: -1;
   width: 100px;
@@ -1820,18 +1820,10 @@ line-height: 100px;
   -webkit-box-shadow: 20px 20px 8px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 20px 20px 18px rgba(0, 0, 0, 0.2);
   box-shadow: 20px 20px 8px rgba()0,0,0,0.2;
-  -webkit-transform: rotate(0deg)
-                        translate(-45px,-20px)
-                        skew(20deg);
-  -moz-transform: rotate(0deg)
-                    translate(-45px,-20px)
-                       skew(20deg);
-  -o-transform: rotate(0deg)
-                    translate(-45px,-20px)
-                       skew(20deg);
-  transform: rotate(0deg)
-                translate(-45px,-20px)
-                skew(20deg);
+  -webkit-transform: rotate(0deg) translate(-45px,-20px) skew(20deg);
+  -moz-transform: rotate(0deg) translate(-45px,-20px) skew(20deg);
+  -o-transform: rotate(0deg) translate(-45px,-20px) skew(20deg);
+  transform: rotate(0deg) translate(-45px,-20px) skew(20deg);
 }
 
 #paso3 {
@@ -1894,4 +1886,489 @@ font-size: 17px;
 
 .evidence-description2:hover {
   white-space: inherit;
+}
+
+/* PESTAÑA 3 ITEM 4*/
+
+figure {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+figure {
+  display: block;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+
+  width: 250px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+
+}
+
+#pensante {
+  display: block;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border: 10px solid #FBE50F;
+  width: 130px;
+  height: 190px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  box-shadow: 0 0 0 4px #000000, 0 0 14px 4px #21ccbb, 0 0 14px 6px white;
+  margin-left: -250px;
+}
+
+figure figcaption {
+  position: absolute;
+  top: -10px;
+  left: 160px;
+  z-index: 2;
+  -webkit-transform: translate(-75%, -50%);
+  transform: translate(-75%, -50%);
+  background: linear-gradient(to right, #00CED1 0%, #66ffff 100%);
+  color: black;
+  padding: 6px;
+  border-radius: 30px;
+  border: 4px solid black;
+  font-weight: 500;
+  width: 575px;
+  line-height: 1;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+}
+
+figure figcaption::before {
+  position: absolute;
+  top: calc(100% - 24px);
+  left: calc(100% + 5px);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 50px solid black;
+  content: '';
+}
+
+figure figcaption::after {
+  position: absolute;
+  top: calc(100% - 22px);
+  left: 100%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 40px solid #66ffff;
+  content: '';
+}
+
+.cTexto {
+  width: 200px;
+  height: 120px;
+  background-color: #f7e7b4;
+  border-radius: 8px;
+  padding: 5px;
+  color: #000000;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  -webkit-animation: shadow-anim 4s infinite;
+          animation: shadow-anim 4s infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  font-weight: bold;
+  margin: 70px -60px;
+}
+
+#txt{
+  margin: 210px -265px;
+  font-family: "Open Sans", sans-serif;
+font-size: 18px;
+width: 702px;
+border: 4px solid black;
+height: 110px;
+line-height: 1.3;
+background: linear-gradient(to right, #00CED1 0%, #66ffff 100%);
+border-radius: 10px;
+}
+
+#txt span{
+  font-style: normal;
+}
+
+/*PESTAÑA 3 ITEM 5*/
+
+.textT5 h1{
+position: fixed;
+bottom: 0;
+height: 10px;
+margin: 520px 175px;
+display: block;
+animation-duration: 3s;
+font-family: Sansita;
+font-size: 25px;
+color: #000000;
+text-align: center;
+line-height: 100px;
+
+  text-shadow: 0 1px 0 #f09609,
+               0 2px 0 #f09609,
+               0 3px 0 #f09609,
+               0 4px 0 #f09609,
+               0 5px 0 #f09609,
+               0 6px 0 transparent,
+               0 7px 0 transparent,
+               0 8px 0 transparent,
+               0 9px 0 transparent,
+               0 10px 10px rgba(0, 0, 0, .6);
+}
+
+#uno{
+  margin:35px -545px; 
+}
+
+#dos{
+  margin:85px -546px; 
+}
+
+#ventaja1{
+ margin: 38px 30px;
+font-family: 'Sansita';
+font-size: 20px;
+
+}
+
+#ventaja1 span{
+  font-style: normal;
+}
+
+#ventaja2{
+ margin: 88px 30px;
+font-family: 'Sansita';
+font-size: 20px;
+
+}
+
+#ventaja2 span{
+  font-style: normal;
+}
+
+.textT6 h1{
+position: fixed;
+bottom: 0;
+height: 10px;
+margin: 350px 170px;
+display: block;
+animation-duration: 3s;
+font-family: Sansita;
+font-size: 25px;
+color: #000000;
+text-align: center;
+line-height: 100px;
+
+  text-shadow: 0 1px 0 #f09609,
+               0 2px 0 #f09609,
+               0 3px 0 #f09609,
+               0 4px 0 #f09609,
+               0 5px 0 #f09609,
+               0 6px 0 transparent,
+               0 7px 0 transparent,
+               0 8px 0 transparent,
+               0 9px 0 transparent,
+               0 10px 10px rgba(0, 0, 0, .6);
+}
+
+.cTexto1 {
+  width: 200px;
+  height: 120px;
+  background-color: #fcef6d;
+  border-left: 10px;
+  padding: 15px;
+  color: #000000;
+  font-family: 'Sansita';
+  font-size: 18px;
+  text-align: center;
+  box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  -webkit-animation: shadow-anim 4s infinite;
+          animation: shadow-anim 4s infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  font-weight: bold;
+  margin: 240px 10px;
+border: 4px inset #f09609;
+-webkit-border-radius: 35px 0px 35px 0px;
+}
+
+#ejemBegin{
+margin: 235px 230px;
+font-family: 'Sansita';
+font-size: 20px;
+width: 450px;
+}
+
+#ejemBegin span {
+  font-style: normal;
+}
+
+/*PESTAÑA 3 ITEM 6*/
+
+.textT7 h1{
+position: fixed;
+bottom: 0;
+height: 10px;
+margin: 520px -15px;
+display: block;
+animation-duration: 3s;
+font-family: Sansita;
+font-size: 30px;
+color: #000000;
+text-align: center;
+line-height: 100px;
+
+  text-shadow: 0 1px 0 #fb5858,
+               0 2px 0 #fb5858,
+               0 3px 0 #fb5858,
+               0 4px 0 #fb5858,
+               0 5px 0 #fb5858,
+               0 6px 0 transparent,
+               0 7px 0 transparent,
+               0 8px 0 transparent,
+               0 9px 0 transparent,
+               0 10px 10px rgba(0, 0, 0, .6);
+}
+
+.card5 {
+  padding: 8px 5px;
+  word-wrap: break-word;
+  height: 40px;
+  font-family: "Open Sans", sans-serif;
+  color: #000000;
+  text-align: justify;
+ font-size: 19px;
+line-height: 1;
+margin: 45px -5px;
+width: 650px;
+}
+
+.card5.card-secondary5 {
+background: linear-gradient(white 0%, #eec1ad 100%);
+  box-shadow: 0 0.0625em 0.1875em 0 rgba(0, 0, 0, 0.1), 
+  0 0.5em 0 -0.25em #ff0000, 0 0.5em 0.1875em -0.25em rgba(0, 0, 0, 0.1), 
+  0 1em 0 -0.5em #ff6666, 0 1em 0.1875em -0.5em rgba(0, 0, 0, 0.1);
+}
+
+.card5 > :last-child {
+  margin-bottom: 0;
+}
+
+.cTexto2 {
+ width: 259px;
+height: 255px;
+  background: linear-gradient(to right, #fdbcbc 0%, #feeeee 100%);
+  border-radius: 8px;
+  padding: 5px;
+  color: #000000;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  -webkit-animation: shadow-anim 4s infinite;
+          animation: shadow-anim 4s infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  font-weight: bold;
+  margin: -10px 40px;
+}
+
+#cinta{
+  margin: 114px -495px;
+  z-index: 1;
+}
+
+.textT8 h1{
+position: fixed;
+bottom: 0;
+height: 10px;
+margin: 520px 185px;
+display: block;
+animation-duration: 3s;
+font-family: Sansita;
+font-size: 30px;
+color: #000000;
+text-align: center;
+line-height: 100px;
+
+  text-shadow: 0 1px 0 #326ada,
+               0 2px 0 #326ada,
+               0 3px 0 #326ada,
+               0 4px 0 #326ada,
+               0 5px 0 #326ada,
+               0 6px 0 transparent,
+               0 7px 0 transparent,
+               0 8px 0 transparent,
+               0 9px 0 transparent,
+               0 10px 10px rgba(0, 0, 0, .6);
+}
+
+#evaM {
+margin: 50px 5px;
+font-family: 'Sansita';
+font-size: 20px;
+line-height: 1.2;
+padding: 1px 1px;
+left: 5px
+}
+
+#evaM span{
+  font-style: normal;
+}
+
+#fondo5 {
+width: 310px;
+height: 220px;
+margin:145px 310px;
+padding: 20px 10px;
+float: left;
+font-family: Sansita;
+text-align: center;
+background: white;
+font-size: 17px;
+font-weight: bold;
+color: #000000;
+background: linear-gradient(to right, #326ada 0%, #98b4ec 100%);
+}
+
+
+.i18 {
+    box-shadow:
+        1px  1px 0 0 #433e90,
+        2px  2px 0 0 #433e90,
+        3px  3px 0 0 #433e90,
+        4px  4px 0 0 #433e90,
+        5px  5px 0 0 #433e90,
+        6px  6px 0 0 #433e90,
+       -1px -1px 0 0 #326ada,
+       -2px -2px 0 0 #326ada,
+       -3px -3px 0 0 #326ada,
+       -4px -4px 0 0 #326ada,
+       -5px -5px 0 0 #326ada,
+       -6px -6px 0 0 #326ada;
+}
+
+#muñecaRosa{
+  margin: 120px -155px;
+}
+
+#programador{
+  margin: 175px -490px;
+}
+
+.evidence-description3 {
+border-radius: 10px;
+color: #000000;
+background: linear-gradient(to top, #b2ffd9 0%, white 100%);
+font-size: 18px;
+font-family: "Open Sans", sans-serif;
+width: 700px;
+padding: 8px 16px;
+text-overflow: ellipsis;
+text-align: justify;
+overflow: hidden;
+position: absolute;
+margin: 110px -10px;
+z-index: 10;
+box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+line-height: 1.2;
+border: 4px solid #ccff66;
+height: 45px;
+top: 5px;
+}
+
+.evidence-description3:hover {
+  white-space: inherit;
+}
+
+/*PESTAÑA 3 ITEM 7*/
+.box1, .box2 {
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 300px;
+  margin-bottom: 40px;
+  margin-right: 40px;
+  padding: 5px;
+  background-color: #efefef;
+  color: #424242;
+height: 300px;
+margin: 55px 10px;
+}
+
+.box1 {
+  margin-left: 10px;
+  width: 390px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.box1:before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 0;
+  height: 100%;
+  width: 10px;
+  background: #FF1493;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.box1 h1 {
+  color: #E71C24;
+}
+
+.box2 {
+  border-radius: 10px;
+  background-image: linear-gradient(to right, #E71C24 10px, white 11px);
+  padding-left: 35px;
+}
+
+.box2 h1 {
+  color: #E71C24;
+  margin-left: -8px;
+  font-size: 24px;
+  margin-top: -15px;
+}
+
+.box2 pre {
+  margin-left: -23px;
+  margin-top: -35px;
+}
+
+@media (max-width: 30em) {
+  .box1, .box2 {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+#compu{
+  margin: 40px -195px;
 }
