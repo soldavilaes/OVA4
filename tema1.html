@@ -260,25 +260,46 @@
 									<b>2.</b> Después de esto, se actualiza el valor x por el de y y el valor de y por el de x.
 								</div>
 
-								<div class="box2">
-									<pre><code>
-										(define x 3)
-										(define y 5)
-										(define (swap-x-y x0 y0)
-										(begin
-										(set! x y0)
-										(set! y x0)))
+								            <div class="box2">
+          
+<pre><code>
+(define x 3)
+(define y 5)
+(define (swap-x-y x0 y0)
+(begin
+(set! x y0)
+(set! y x0)))
 
-										(begin
-										(set! x 3)
-										(set! y 5))
-									</code></pre> 
-								</div>
+(begin
+(set! x 3)
+(set! y 5))
+  </code></pre> 
+            </div>
+							
 								<img id="compu" src="compu.png">
 							</div>
 
 							<div id="ejemplo8-tab" class="tab-content">
-								
+
+							<div class="boxx3">
+									<p id="paso4"><span><b>3.</b> Por último, el resultado de la evaluación es (void) porque la última expresión evaluada fue una expresión set!</span></p>
+								</div>
+
+								           <div id="wrap">
+                    <div class="box-wrap">
+                      <div class="caja2">
+                      	(define x 5) <br>
+(define y 3) <br>
+(define (swap-x-y x0 y0) <br>
+(begin <br>
+(set! x y0) <br>
+(set! y x0))) <br>
+(void)
+                      </div>
+                    </div>
+                  </div>
+                  
+<img id="nota" src="notaa.png">
 							</div>
 
 						</div>
