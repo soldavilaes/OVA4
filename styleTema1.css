@@ -2711,3 +2711,69 @@ border-radius: 10px;
 #tab4 {
   background: linear-gradient(to bottom, #ffffff 0%, #99ccff 100%);
 }
+
+/* VIDEO 1*/
+
+#video1 {
+  left: 120px;
+  top: -3px;
+}
+
+#tamañoV {
+  width: 675px;
+  height: 420px;
+}
+
+#indVideo {
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+  margin-top: -20px;
+  margin-left: -10px;
+  font-size: 16px;
+  font-weight: normal;
+  color: #6600cc;
+}
+
+/* VIDEO 2 */
+
+#video2 {
+  left: 120px;
+  top: -3px;
+}
+
+#tamañoV2 {
+  width: 675px;
+  height: 420px;
+}
+
+#indVideo2 {
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+  margin-top: -20px;
+  margin-left: -10px;
+  font-size: 16px;
+  font-weight: normal;
+  color: #00ccff;
+}
+
+/* VIDEO 3 */
+
+#video3 {
+  left: 120px;
+  top: -3px;
+}
+
+#tamañoV3 {
+  width: 675px;
+  height: 420px;
+}
+
+#indVideo3 {
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+  margin-top: -20px;
+  margin-left: -10px;
+  font-size: 16px;
+  font-weight: normal;
+  color: #ffcc00;
+}
