@@ -250,6 +250,11 @@ li.active {
   color: white;
 }
 
+.pestaña10 {
+  background-color: rgba(235,30, 0, 1);
+  color: white;
+}
+
 .panel {
   width: 85%;
   margin: 1rem auto;
@@ -2932,4 +2937,78 @@ border-radius: 10px;
 #linea {
   margin: 30px -30px;
 
+}
+
+/*PESTAÑA 6*/
+
+#tab6 {
+    background: linear-gradient(to bottom, #ffffff 0%, #f4c20d 100%);
+}
+
+#subtitulo2 {
+  padding-bottom: 0em;
+  color: #000000;
+  font-family: sansita;
+  text-shadow: 0 0 0.2em #a7254d, 0 0 0.2em #a7254d;
+  height: 0px;
+font-size: 35px;
+font-weight: bold;
+margin-left: 380px;
+margin-top: -20px;
+}
+
+#subtitulo2 span {
+    font-style: normal;
+  }
+
+.mybox1 { 
+  width: 910px;
+  height: 135px;
+  background: linear-gradient(to right, #dfa798 0%, #faebd7 100%);
+  box-shadow: 10px 10px #a7254d;
+  padding: 10px;
+  top: 60px;
+  left: 5px;
+
+}
+       
+.mybox1:hover { 
+    box-shadow: 10px 0 10px 0 #a7254d; 
+  }
+
+.mybox1 span {
+  line-height: 1.1;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  color: #000000;
+  text-align: justify;
+  font-style: normal;
+}
+
+#libreta{
+  margin: 195px -430px;
+}
+
+#hoja{
+  margin: 205px -65px;
+}
+
+.i6 {
+  border-radius: 3px;
+  box-shadow:
+        -4px  0px 0 0 #3F48CC, 
+         0px -4px 0 0 #3F48CC,
+         4px  0px 0 0 #3F48CC, 
+         0px  4px 0 0 #3F48CC,
+         0px  0px 0 7px #33a1ee;
+width: 260px;
+margin-top: 17px;
+margin-left: 10px;
+  line-height: 1;
+  padding: 3px;
+  font-size: 15px;
+  text-align: justify;
+  font-family: 'Open Sans', Sans-serif;
+  color: #000000;
+  background: linear-gradient(to top, #F5D13E 0%, #ffffff 100%);
 }
