@@ -364,8 +364,8 @@ label {
   display: block;
   font-size: 18px;
   color: #666;
-  /*border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;*/
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
   padding: 20px 0;
   cursor: pointer;
 }
