@@ -2037,11 +2037,11 @@ line-height: 100px;
                0 10px 10px rgba(0, 0, 0, .6);
 }
 
-#uno{
+#primero{
   margin:35px -545px; 
 }
 
-#dos{
+#segundo{
   margin:85px -546px; 
 }
 
@@ -2049,7 +2049,6 @@ line-height: 100px;
  margin: 38px 30px;
 font-family: 'Sansita';
 font-size: 20px;
-
 }
 
 #ventaja1 span{
@@ -2060,7 +2059,6 @@ font-size: 20px;
  margin: 88px 30px;
 font-family: 'Sansita';
 font-size: 20px;
-
 }
 
 #ventaja2 span{
@@ -2687,12 +2685,12 @@ border-radius: 10px;
 }
 
 #uno {
-  margin-top: -15px;
+  margin: -15px -538px;
 
 }
 
 #dos {
-  margin-top: -15px;
+ margin: -15px -538px;
 }
 
 
