@@ -12,7 +12,14 @@ and open the template in the editor.
          </style>
           <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-   
+    <link type="text/css" href="consPalabras_resources/css/ardoraConstruPal.css" rel="stylesheet" />
+    <script language="javascript" type="text/javascript" src="consPalabras_resources/js/jquery.js"></script>
+    <script language="javascript" type="text/javascript" src="consPalabras_resources/js/jquery-ui.min.js"></script>
+    <script language="javascript" type="text/javascript" src="consPalabras_resources/js/jquery.ui.touch-punch.min.js"></script>
+    <script language="javascript" type="text/javascript" src="consPalabras_resources/js/ardoraConstruPalCFG.js"></script>
+    <script language="javascript" type="text/javascript" src="consPalabras_resources/js/ardoraScorm.js"></script>
+    <script language="javascript" type="text/javascript" src="consPalabras_resources/js/ardoraConstruPal.js"></script>
+    <script language="javascript" type="text/javascript" src="consPalabras_resources/js/ardoraTab.js"></script>
     </head>
     <body>
         <div id="content">
@@ -28,18 +35,32 @@ and open the template in the editor.
                  <pre><h3 id="pointer">    <i class="fa fa-edit"></i> ACTIVIDAD 1</h3> </pre>
                   <p>Para realizar el crucigrama, haga click en cada uno de los cuadros blancos.</p><img src="iObjetivos.png"/> 
 
-        <div id="contenidoGeneral">
-          
+          <div id="contenidoGeneral">
+            <div id="ardoraMain">
+              <p id="titulo2"><span>CONSTRUYE LA PALABRA CORRESPONDIENTE A LA DEFINICIÓN DADA</span></p>
+              <audio id="audioFelicitacion">
+              <source src="consPalabras_resources/media/correcto___Efecto_de_sonido__128__kbps___ytformp3.com_.mp3" type="audio/mp3">
+              </audio>
+              <audio id="audioErro">
+              <source src="consPalabras_resources/media/RESPUESTA_INCORRECTA__128__kbps___ytformp3.com_.mp3" type="audio/mp3">
+              </audio>
+              <div id="ardoraEnu"><SPAN style="font-size:16px;color:#000000">(<b>Nota:</b> Ten en cuenta los espacios entre algunas palabras). </SPAN></div>
+              <div id="nota"><span><b>Definición:</b></span></div>
+              <div id="help_div"></div>
+              <div id="contentdiv">
+                <div id="ardoraAct">
+              <canvas id="ardoraActCanvas" width="2px" height="2px"></canvas>
+              </div></div>
+              <div id="ardoraTab">
+                <div id="buttonOk"><canvas id="buttonOkCanvas" width="70" height="70"></canvas></div>
+              </div>
+            </div>
+            <div id="ardoraAlumSCORM"><p></p></div>
+          </div>
         </div>
-        </div>
-
-         <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
-
-  
-
-    <script  src="actividad.js"></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
-          <script  src="page.js"></script>
-
+        <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+        <script  src="actividad.js"></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+        <script  src="page.js"></script>
     </body>
 </html>
