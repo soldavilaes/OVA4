@@ -1507,7 +1507,7 @@ body {
 }
  /*TAB 2*/
 
- .box {
+ .boxF {
   display:block;
   margin:auto;
   width:700px;
@@ -1662,4 +1662,8 @@ clip-path: polygon(8% 0, 92% 0, 100% 100%, 0% 100%);
 body {
   overflow: hidden;
   background: #3c6382;
+}
+
+#iActividad {
+  margin: 0px -65px;
 }
