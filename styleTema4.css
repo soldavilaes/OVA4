@@ -6,7 +6,6 @@ html, body {
   font-weight: normal;
   margin: 0 auto;
   overflow-X: hidden;
-  /*overflow-Y: auto;*/
   padding: 0;
   overflow-y:hidden;
    background: radial-gradient(#FFF176, #F57F17);
@@ -2368,7 +2367,7 @@ top: 5px;
 }
 
 .box2 pre {
-  margin-left: -23px;
+  margin-left: -940px;
   margin-top: -35px;
 }
 

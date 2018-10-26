@@ -6,7 +6,6 @@ html, body {
   font-weight: normal;
   margin: 0 auto;
   overflow-X: hidden;
-  /*overflow-Y: auto;*/
   padding: 0;
   overflow-y:hidden;
    font-style: normal;
@@ -97,18 +96,6 @@ h4{
     top: 5px;
     left: -4px;
   }
-
- /* #pointer:after {
-    content: "";
-    position: absolute;
-    left: -20px;
-    bottom: 0;
-    width: 0;
-    height: 0;
-    border-left: 15px solid white;
-    border-top: 21px solid transparent;
-    border-bottom: 21px solid transparent; 
-  }*/
 
   #pointer:before {
     content: "";

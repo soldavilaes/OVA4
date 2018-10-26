@@ -1,7 +1,3 @@
-	<!--
-	To change this template, choose Tools | Templates
-	and open the template in the editor.
--->
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,447 +18,429 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 </head>
 <body>
+
 	<div id="content">
-
-<div id="loader">
-  <div class="count">100%</div>
-</div>
-
-<div id ="cabecera">
-	<img src="iconoPrin4.png"/>
-	<pre><h2>              CAMBIANDO EL ESTADO DE LAS VARIABLES</h2></pre>
-</div>
-
-<div id="escenario">
-	<pre><h3 id="pointer">       <i class="fa fa-list"></i> TEMA 4</h3> </pre>
-	<p>Hacer clic en las pestañas para continuar </p><img id="iPestaña" src="pestañas.png"/>
-
-	<!--  <div id="contenidoGeneral">-->
-
-		<!-- PESTAÑAS -->      
-		<div id="tabs">
-			<ul id="tabs-nav">
-				<li class="pestaña10"><a href="#tab10">10</a></li>
-				<li class="pestaña9"><a href="#tab9">9</a></li>
-				<li class="pestaña8"><a href="#tab8">8</a></li>
-				<li class="pestaña7"><a href="#tab7">7</a></li>
-				<li class="pestaña6"><a href="#tab6">6</a></li>
-				<li class="pestaña5"><a href="#tab5">5</a></li>
-				<li class="pestaña4"><a href="#tab4">4</a></li>
-				<li class="pestaña3"><a href="#tab3">3</a></li>
-				<li class="pestaña2"><a href="#tab2">2</a></li>
-				<li class="pestaña1"><a href="#tab1">1</a></li>
-			</ul> <!-- tabs-nav -->
-			<div id="tabs-content">
-
-				<!--PESTAÑA 1-->
-				<div id="tab1" class="contentt">
-					<img id="titulo1" src="titulo1.png">
-					<img id="profesora" src="profesora.png">
-					<div class="mybox"><span>La asignación de valores a variables se lleva a cabo a través de la expresión set!, la cual está conformada por dos parámetros como se muestra a continuación:
-					</span></div>
-					<div class="recuadro3 verde">(set! var exp)</div>
-
-					<main>
-						<section>
-							<!-- CAJA 1 -->
-							<div class="cuadroT">
-								<div class="contents">
-									<h2>(<b>Var:</b>)</h2>
-									<p id="funcion1"><span><br>Es una variable fija</span></p>
-								</div>
-							</div>
-
-							<!-- CAJA 2 -->
-							<div class="cuadroT2">
-								<div class="contents2">
-									<h2>(<b>Exp:</b>)</h2>
-									<p id="funcion2"><span><br>Es una expresión.</span></p>
-								</div>
-							</div>
-						</section>
-					</main>
-
-				</div>
-				<!-- PESTAÑA 2-->
-				<div id="tab2" class="contentt">  
-					<div class='containers'>
-						<p id="conceptoLocal"><span>Una característica relevante de la expresión set! es el efecto de su evaluación. En primera instancia de la evaluación de la expresión set! se determina el valor de <b>exp</b>, por ejemplo <b>V</b>, y después de esto la definición de <b>var</b> cambia de la siguiente manera:</span></p>
-					</div>
-
-					<div class="recuadro yellow">(define var V)</div>
-					<img id="muñecaR" src="muñecaR.png">
-					<div class="notice-wrapper">
-						<div class="notice js-notice">
-							<div class="notice-icon"></div>
-							<div class="notice-text">
-								<h5 class="notice-title">A partir de esta definición se puede observar el efecto, correspondiente a que todas las referencias a var en una evaluación se intercambian por V, perdiendo su valor anterior. De acuerdo a esto, la expresión set! es un operador de efecto que no retorna un valor pero permite cambiar el valor de una variable.</h5>
-							</div>
-						</div>
-					</div>
-
-				</div>
-				
-				<!-- PESTAÑA 3-->
-				<div id="tab3" class="contentt">
-					<p id="indicacion2"><span>Haz clic sobre las pestañas verticales para observar los ejemplos.</span></p>
-
-					<div class="tabbed-content clearfix">
-						<!--Tabbed navigation-->
-						<ul class="tabss">
-							<li class="tab-link current" data-tab="text-tab">Ejemplo 1</li>
-							<li class="tab-link" data-tab="video-tab">Evaluación manual</li>
-							<li class="tab-link" data-tab="audio-tab">Evaluación manual</li>
-							<li class="tab-link" data-tab="ejemplo3-tab">Begin</li>
-							<li class="tab-link" data-tab="ejemplo4-tab">Begin</li>
-							<li class="tab-link" data-tab="ejemplo5-tab">Ejemplo Set! y Begin</li>
-							<li class="tab-link" data-tab="ejemplo6-tab">Evaluación manual</li>
-							<li class="tab-link" data-tab="ejemplo7-tab">Evaluación manual</li>
-							<li class="tab-link" data-tab="ejemplo8-tab">Evaluación manual</li>
-						</ul>
-						<!--Wrapper to contain interchanging content-->
-						<div class="tabs-wrapper">
-							<!--textual tab content-->
-							<div id="text-tab" class="tab-content current">
-								<div class="defAb">
-									<h1>EJEMPLO 1</h1>
-								</div>
-								<p id="text1"> <span> Observe la definición y la expresión local que se muestra a continuación.</span></p>
-								<img id="lupa" src="lupa.png">
-								<div id="fondo4" class="i17">(define x 3)<br>(local ( <br>(define z (set! x (+ x 2)))) <br>x)</div>
-
-								<div class="perspective">
-									<div class="note">
-										<p id="pDefLocal"><span>En primer lugar, la definición establece que X es 3. Después de esto, La definición local contiene una definición para z y su cuerpo es x, lo que indica que en un inicio el valor de la expresión local era 3, sin embargo al contener la expresión set! el valor de x cambió. Para conocer su nuevo valor se realizara la evaluación del programa paso a paso hasta llegar al resultado final.</span></p>
-									</div>
-									
-
-								</div> 
-							</div>
-
-							<!--video tab content-->
-							<div id="video-tab" class="tab-content">
-								<div class="textT2">
-									<h1>PASO 1</h1>
-								</div>
-								<p id="tex2"><span>Inicialmente no se tiene en cuenta la definición local en la evaluación, por lo cual la
-								función toma la siguiente forma:</span></p>
-								<div class="card3 card-secondary3">
-									(define x 3) <br>
-									(define z (set! x (+ x 2))) <br>
-									X
-								</div>
-
-								<div class="textT3">
-									<h1>PASO 2</h1>
-								</div>
-
-								<p id="tex3"><span>Seguidamente se debe determinar el valor de la expresión set!: <b>(set! X (+ x 2))</b>, evaluando el lado derecho de esta asignación <b>(+ x 2)</b>, a partir de lo cual x toma el valor de 5, debido a que su valor inicial es 3.</span></p>
-
-								<div class="card4 card-secondary4">
-									(define x 3) <br>
-									(define z (set! x 5))<br>
-									X
-								</div>
-
-							</div>
-							<!--audio tab content-->
-							<div id="audio-tab" class="tab-content">
-
-								<div class="textT4">
-									<h1>PASO 3</h1>
-								</div>
-
-								<div class="boxx2">
-									<p id="paso3"><span>Se produce el efecto de la expresión set!, el cual consiste en cambiar el valor de la variable x. A partir de esto el valor de x ya no es 3 sino 5, y esta modificación se <br>evidencia en la definición de x.</span></p>
-								</div>
-
-								<div id="fondo2" class="i18">(define x 5) <br>
-									(define z (void))<br>
-								X</div>
-								<div class="evidence-description2">
-									El valor de <b>set!</b> es (void) el cual es correspondiente a un valor invisible, por lo que al
-									intercambiar la expresión set! con el valor invisible la evaluación ha terminado.
-									Finalmente se puede observar en esta estas definiciones que el resultado es 5, ya
-									que la primera definición se muestra que el valor actual de x es 5 y la última
-									expresión es x.
-								</div>
-								
-							</div> 
-							
-
-							
-							<div id="ejemplo3-tab" class="tab-content">
-								<figure>
-									<img id="pensante" src="pensar.png">
-									<figcaption contenteditable>Begin es una expresión que consta de la palabra reservada begin seguida de una secuencia de n+1 expresiones como se muestra a continuación:
-									</figcaption>
-									<div class="cTexto">(begin exp-1 <br> ... <br> exp-n <br> exp)
-									</div>
-									<p id="txt"><span>En la expresión begin, inicialmente se establecen los valores de las expresiones en orden y finalmente el valor de la última expresión es el valor de la expresión inicial. Básicamente la expresión begin permite ejecutar varias expresiones y retornar un valor.</span></p>
-								</figure>
-
-
-							</div>
-
-							<div id="ejemplo4-tab" class="tab-content">
-								<div class="textT5">
-									<h1>VENTAJAS DE UTILIZAR BEGIN</h1>
-								</div>
-								<img id="primero" src="primero.png">
-								<p id="ventaja1"><span>La expresión begin simplifica las funciones.</span></p>
-								<img id="segundo" src="segundo.png">
-								<p id="ventaja2"><span>La expresion begin propone un ordenamiento directo de la evaluación.</span></p>
-								<div class="textT6">
-									<h1>EJEMPLO ANTERIOR CON BEGIN</h1>
-								</div>
-								<div class="cTexto1">(define x 3)<br> (begin (set! x (+ x 2))<br>x)
-								</div>
-								<p id="ejemBegin"><span>Esta función al implementar la expresión begin permite retornar el valor de x, el cual es en este caso 5.</span></p>
-							</div>
-
-							<div id="ejemplo5-tab" class="tab-content">
-								<div class="textT7">
-									<h1>EJEMPLO SET! Y BEGIN</h1>
-								</div>
-
-								<div class="card5 card-secondary5">
-									Considere la función swap-x-y, la cual recibe dos valores y realiza dos Set!.
-								</div>
-								<img id="cinta" src="cinta.png">
-								<div class="cTexto2"><br>(define x 3)<br>(define y 5)<br>(define (swap-x-y x0 y0)<br>(begin<br>(set! x y0)<br>(set! y x0)))<br><br>(swap-x-y x y)
-								</div>
-								<img id="muñecaRosa" src="muñecaRosa.png">
-							</div>
-
-
-
-							<div id="ejemplo6-tab" class="tab-content">
-								<div class="textT8">
-									<h1>EVALUACIÓN MANUAL</h1>
-								</div>
-								<p id="evaM"><span><b>1.</b> Debido a que (swap-x-y x y) es una aplicación de función, es necesario evaluar los parámetros o variables. Por lo cual reemplazamos las variables con sus valores (actuales):</span></p>
-								
-								<div id="fondo5" class="i18">((define x 3)<br>
-									(define y 5)<br>
-									(define (swap-x-y x0 y0)<br>
-									(begin<br>
-									(set! x y0)<br>
-									(set! y x0)))<br>
-								(swap-x-y 3 5)</div>
-								<img id="programador" src="programador.png">
-
-							</div>
-
-
-							<div id="ejemplo7-tab" class="tab-content">
-								
-								<div class="evidence-description3">
-									<b>2.</b> Después de esto, se actualiza el valor x por el de y y el valor de y por el de x.
-								</div>
-
-								            <div class="box2">
-          
-<pre><code>
-(define x 3)
-(define y 5)
-(define (swap-x-y x0 y0)
-(begin
-(set! x y0)
-(set! y x0)))
-
-(begin
-(set! x 3)
-(set! y 5))
-  </code></pre> 
-            </div>
-							
-								<img id="compu" src="compu.png">
-							</div>
-
-							<div id="ejemplo8-tab" class="tab-content">
-
-							<div class="boxx3">
-									<p id="paso4"><span><b>3.</b> Por último, el resultado de la evaluación es (void) porque la última expresión evaluada fue una expresión set!</span></p>
-								</div>
-
-								           <div id="wrap">
-                    <div class="box-wrap">
-                      <div class="caja2">
-                      	(define x 5) <br>
-(define y 3) <br>
-(define (swap-x-y x0 y0) <br>
-(begin <br>
-(set! x y0) <br>
-(set! y x0))) <br>
-(void)
-                      </div>
-                    </div>
-                  </div>
-                  
-<img id="nota" src="notaa.png">
-							</div>
-
-						</div>
-					</div>
-				</div>
-
-				<!-- PESTAÑA 4-->
-				<div id="tab4" class="contentt">
-					<img id="dFunciones" src="dFunciones.png" />
-					<p id="enunciado1"><span>Diseñar funciones con memoria requiere tres pasos importantes:</span></p>	
-					<div class="containerss">
-					    <div class="row">
-					    	<!-- flex-container -->
-					        <div class="col-md-12 flex-container">
-					        	<!-- flex-item -->
-					            <div class="flex-item">
-					            	<div class="flex-item-inner">
-					                	<!-- card -->
-					                	<a href="#">
-					                        <div class="card-front bg-violet">
-					                           <img id="uno" src="numero1.png">
-					                        </div>
-					                        <div class="card-back bg-violet">
-					                            <p id="paso1" class="desc"><span>Determinar que un programa requiere memoria.</span></p>
-					                        </div>
-					                    </a>
-					                    <!-- /card -->
-					                </div>
-					            </div>
-					            <!-- /flex-item -->
-					            
-					            <!-- flex-item -->
-					            <div class="flex-item">
-					            	<div class="flex-item-inner">
-					                	<!-- card -->
-					                    <a href="#">
-					                        <div class="card-front bg-magenta">
-					                            <img id="dos" src="numero2.png">
-					                        </div>
-					                        <div class="card-back bg-magenta">
-					                            <p id="paso2" class="desc"><span>Identificar los datos que van en la memoria.</span></p>
-					                        </div>
-					                    </a>
-					                    <!-- /card -->
-					                </div>
-					            </div>
-					            <!-- /flex-item -->
-					            
-					            <!-- flex-item -->
-					            <div class="flex-item">
-					            	<div class="flex-item-inner">
-					                	<!-- card -->
-					                	<a href="#">
-					                        <div class="card-front bg-blue">
-					                           <img id="dos" src="numero3.png">
-					                        </div>
-					                        <div class="card-back bg-blue">
-					                            <p id="paso3" class="desc"><span>Entender qué servicios se supone que deben modificar la memoria y cuáles deben usar la memoria.</span></p>
-					                        </div>
-					                    </a>
-					                    <!-- /card -->
-					                </div>
-					            </div>
-					            <!-- /flex-item -->  
-					        </div>
-					        <!-- /flex-container -->
-					    </div>
-					</div>
-					<img id="diseño" src="diseñador.png">
-					<img id="diseño2" src="diseñador2.png">
-				</div>
-			</div>
-			<!-- PESTAÑA 5 -->	
-			<div id="tab5" class="contentt">
-				<h6 id="indVideo">Haz clic en los botones &#9658; para observar el video.</h6>
-				<div id="video1"><iframe id="tamañoV" src="https://www.powtoon.com/embed/g6h6JS1Cys8/" frameborder="0"></iframe></div>
-			</div>
-
-			<!--PESTAÑA 6-->
-
-			<div id="tab6" class="contentt">
-			 <p id="subtitulo2"><span>EJEMPLO</span></p>
-			 <div class="mybox1"><span>Considere una libreta de direcciones (Las que las personas solían guardar antes de que existieran los cuadernos electrónicos). En esta libreta se tiene una variable de estado: address-book, esta variable pretende representar una lista de entradas, donde cada entrada es una lista de dos elementos: un nombre y un número. Para documentar que la libreta de direcciones puede representar solo tales listas, agregamos un contrato de la siguiente manera:
-			 </span></div>			
-			
-			<img id="libreta" src="libreta.png">
-			<img id="hoja" src="hoja.png">
-
-			</div>
-
-			<!--PESTAÑA 7-->
-
-			<div id="tab7" class="contentt">
-			<p id="texto1"><span>La expresión anterior se expresa correctamente de la siguiente manera:</span></p>
-			<div class="recuadro1 yellow1">(set! address-book empty)</div>
-			<img id="leer" src="leer.png">         
-       		<p id="texto2"><span>Ya que se vuelve a establecer address-book en su valor inicial.</span></p>
-                        <div id="wrap1">
-                    <div class="box-wrap1">
-                      <div class="cajaTexto"><b>(set! address-book (cons (list 'Adam 1) address-book))</b> Nos ayuda a comprender mejor cómo las funciones pueden cambiar el valor de address-book de una manera útil. 
-              <br><br> 
-
-<b>address-book</b> representa una lista de listas, como la siguiente: <b>(cons (list 'Adam 1) address-book)</b> con lo que se construye una lista más larga del tipo correcto. De ahí, la expresión <b>set!</b> simplemente cambia la variable de estado para representar un valor diferente en la clase de <b>(listof (número de símbolo de lista)).</b></div>
-                    </div>
-                  </div>
-          </div>
-
-		
-
-			<!--PESTAÑA 8-->
-			<div id="tab8" class="contentt">
-				<img id="fMemoria" src="fMemoria.png" />
-				<div class='tengah'>
-  					<h1></h1></div>
-					<div class='nota orange'>Después de que hayamos desarrollado contratos y declaraciones de propósito para las variables de estado de un programa, inmediatamente definimos una función que establece las variables de estado en valores apropiados. Llamamos a esta función una <b>FUNCIÓN DE INICIALIZACIÓN</b> o un <b>INICIALIZADOR </b>.</div>
-					<div class="diafragma">
-					  <div class="text">El <b>inicializador</b> de un programa es la primera función que se utiliza durante una ejecución. Un programa también puede proporcionar otros medios para invocar el inicializador.</div>
-					  <div class="hoja"></div>
-					  <div class="hoja giro"></div>
-					</div>
-					<img id="linea" src="linea.png" />
-					<p id="ejFunciones"><span>Ejemplo</span></p>
-					<p id="ejm"><span>Hay un inicializador en el ejemplo de address-book:</span></p>
-					<div class="cajaF box-6">
-	  					;; init-address-book : -> void
-						(define (init-address-book)
-						(set! address-book empty))
-					</div>
-			</div>
-			<!--PESTAÑA 9-->
-			<div id="tab9" class="contentt">
-				<h6 id="indVideo2">Haz clic en los botones &#9658; para observar el video.</h6>
-				<div id="video2"><iframe id="tamañoV2" src="https://www.powtoon.com/embed/dCHgFGY9lOd/" frameborder="0"></iframe></div>
-			</div>
-			<!--PESTAÑA 10-->
-			<div id="tab10" class="contentt">
-				<h6 id="indVideo3">Haz clic en los botones &#9658; para observar el video.</h6>
-				<div id="video3"><iframe id="tamañoV3" src="https://www.powtoon.com/embed/fZijIWbJxhd/" frameborder="0"></iframe></div>
-			</div>
+		<div id="loader">
+			<div class="count">100%</div>
 		</div>
-	</div>
-</div>
 
-<script src='https://raw.githubusercontent.com/WickyNilliams/enquire.js/master/dist/enquire.min.js'></script>
-<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js'></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js'></script>
+		<div id ="cabecera">
+			<img src="iconoPrin4.png"/>
+			<pre><h2>              CAMBIANDO EL ESTADO DE LAS VARIABLES</h2></pre>
+		</div>
+		<div id="escenario">
+			<pre><h3 id="pointer">       <i class="fa fa-list"></i> TEMA 4</h3> </pre>
+			<p>Hacer clic en las pestañas para continuar </p><img id="iPestaña" src="pestañas.png"/>
 
+			<!--  <div id="contenidoGeneral">-->
+				<!-- PESTAÑAS -->      
+				<div id="tabs">
+					<ul id="tabs-nav">
+						<li class="pestaña10"><a href="#tab10">10</a></li>
+						<li class="pestaña9"><a href="#tab9">9</a></li>
+						<li class="pestaña8"><a href="#tab8">8</a></li>
+						<li class="pestaña7"><a href="#tab7">7</a></li>
+						<li class="pestaña6"><a href="#tab6">6</a></li>
+						<li class="pestaña5"><a href="#tab5">5</a></li>
+						<li class="pestaña4"><a href="#tab4">4</a></li>
+						<li class="pestaña3"><a href="#tab3">3</a></li>
+						<li class="pestaña2"><a href="#tab2">2</a></li>
+						<li class="pestaña1"><a href="#tab1">1</a></li>
+					</ul> <!-- tabs-nav -->
+					<div id="tabs-content">
 
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
-<script src="page.js"></script>
+						<!--PESTAÑA 1-->
+						<div id="tab1" class="contentt">
+							<img id="titulo1" src="titulo1.png">
+							<img id="profesora" src="profesora.png">
+							<div class="mybox"><span>La asignación de valores a variables se lleva a cabo a través de la expresión set!, la cual está conformada por dos parámetros como se muestra a continuación:
+							</span></div>
+							<div class="recuadro3 verde">(set! var exp)</div>
 
+							<main>
+								<section>
+									<!-- CAJA 1 -->
+									<div class="cuadroT">
+										<div class="contents">
+											<h2>(<b>Var:</b>)</h2>
+											<p id="funcion1"><span><br>Es una variable fija</span></p>
+										</div>
+									</div>
 
-<script  src="step3P4.js"></script>
+									<!-- CAJA 2 -->
+									<div class="cuadroT2">
+										<div class="contents2">
+											<h2>(<b>Exp:</b>)</h2>
+											<p id="funcion2"><span><br>Es una expresión.</span></p>
+										</div>
+									</div>
+								</section>
+							</main>
 
-<!--<script src="lightbox.js"></script>-->
-<script  src="tema4.js"></script>
-<script  src="pestaña2.js"></script>
-<script  src="boton.js"></script>
-<script  src="IndexPestaña4.js"></script>
-<script  src="indexP7.js"></script>
+						</div>
 
-</body>
-</html>
+						<!-- PESTAÑA 2-->
+						<div id="tab2" class="contentt">  
+							<div class='containers'>
+								<p id="conceptoLocal"><span>Una característica relevante de la expresión set! es el efecto de su evaluación. En primera instancia de la evaluación de la expresión set! se determina el valor de <b>exp</b>, por ejemplo <b>V</b>, y después de esto la definición de <b>var</b> cambia de la siguiente manera:</span></p>
+							</div>
+
+							<div class="recuadro yellow">(define var V)</div>
+							<img id="muñecaR" src="muñecaR.png">
+							<div class="notice-wrapper">
+								<div class="notice js-notice">
+									<div class="notice-icon"></div>
+									<div class="notice-text">
+										<h5 class="notice-title">A partir de esta definición se puede observar el efecto, correspondiente a que todas las referencias a var en una evaluación se intercambian por V, perdiendo su valor anterior. De acuerdo a esto, la expresión set! es un operador de efecto que no retorna un valor pero permite cambiar el valor de una variable.</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- PESTAÑA 3-->
+						<div id="tab3" class="contentt">
+							<p id="indicacion2"><span>Haz clic sobre las pestañas verticales para observar los ejemplos.</span></p>
+
+							<div class="tabbed-content clearfix">
+								<!--Tabbed navigation-->
+								<ul class="tabss">
+									<li class="tab-link current" data-tab="text-tab">Ejemplo 1</li>
+									<li class="tab-link" data-tab="video-tab">Evaluación manual</li>
+									<li class="tab-link" data-tab="audio-tab">Evaluación manual</li>
+									<li class="tab-link" data-tab="ejemplo3-tab">Begin</li>
+									<li class="tab-link" data-tab="ejemplo4-tab">Begin</li>
+									<li class="tab-link" data-tab="ejemplo5-tab">Ejemplo Set! y Begin</li>
+									<li class="tab-link" data-tab="ejemplo6-tab">Evaluación manual</li>
+									<li class="tab-link" data-tab="ejemplo7-tab">Evaluación manual</li>
+									<li class="tab-link" data-tab="ejemplo8-tab">Evaluación manual</li>
+								</ul>
+								<!--Wrapper to contain interchanging content-->
+								<div class="tabs-wrapper">
+									<!--textual tab content-->
+									<div id="text-tab" class="tab-content current">
+										<div class="defAb">
+											<h1>EJEMPLO 1</h1>
+										</div>
+										<p id="text1"> <span> Observe la definición y la expresión local que se muestra a continuación.</span></p>
+										<img id="lupa" src="lupa.png">
+										<div id="fondo4" class="i17">(define x 3)<br>(local ( <br>(define z (set! x (+ x 2)))) <br>x)</div>
+
+										<div class="perspective">
+											<div class="note">
+												<p id="pDefLocal"><span>En primer lugar, la definición establece que X es 3. Después de esto, La definición local contiene una definición para z y su cuerpo es x, lo que indica que en un inicio el valor de la expresión local era 3, sin embargo al contener la expresión set! el valor de x cambió. Para conocer su nuevo valor se realizara la evaluación del programa paso a paso hasta llegar al resultado final.</span></p>
+											</div>
+										</div> 
+									</div>
+
+									<!--video tab content-->
+									<div id="video-tab" class="tab-content">
+										<div class="textT2">
+											<h1>PASO 1</h1>
+										</div>
+										<p id="tex2"><span>Inicialmente no se tiene en cuenta la definición local en la evaluación, por lo cual la
+										función toma la siguiente forma:</span></p>
+										<div class="card3 card-secondary3">
+											(define x 3) <br>
+											(define z (set! x (+ x 2))) <br>
+											X
+										</div>
+
+										<div class="textT3">
+											<h1>PASO 2</h1>
+										</div>
+
+										<p id="tex3"><span>Seguidamente se debe determinar el valor de la expresión set!: <b>(set! X (+ x 2))</b>, evaluando el lado derecho de esta asignación <b>(+ x 2)</b>, a partir de lo cual x toma el valor de 5, debido a que su valor inicial es 3.</span></p>
+
+										<div class="card4 card-secondary4">
+											(define x 3) <br>
+											(define z (set! x 5))<br>
+											X
+										</div>
+
+									</div>
+									<!--audio tab content-->
+									<div id="audio-tab" class="tab-content">
+
+										<div class="textT4">
+											<h1>PASO 3</h1>
+										</div>
+
+										<div class="boxx2">
+											<p id="paso3"><span>Se produce el efecto de la expresión set!, el cual consiste en cambiar el valor de la variable x. A partir de esto el valor de x ya no es 3 sino 5, y esta modificación se <br>evidencia en la definición de x.</span></p>
+										</div>
+
+										<div id="fondo2" class="i18">(define x 5) <br>
+											(define z (void))<br>
+										X</div>
+										<div class="evidence-description2">
+											El valor de <b>set!</b> es (void) el cual es correspondiente a un valor invisible, por lo que al
+											intercambiar la expresión set! con el valor invisible la evaluación ha terminado.
+											Finalmente se puede observar en esta estas definiciones que el resultado es 5, ya
+											que la primera definición se muestra que el valor actual de x es 5 y la última
+											expresión es x.
+										</div>
+
+									</div> 
+
+									<div id="ejemplo3-tab" class="tab-content">
+										<figure>
+											<img id="pensante" src="pensar.png">
+											<figcaption contenteditable>Begin es una expresión que consta de la palabra reservada begin seguida de una secuencia de n+1 expresiones como se muestra a continuación:
+											</figcaption>
+											<div class="cTexto">(begin exp-1 <br> ... <br> exp-n <br> exp)
+											</div>
+											<p id="txt"><span>En la expresión begin, inicialmente se establecen los valores de las expresiones en orden y finalmente el valor de la última expresión es el valor de la expresión inicial. Básicamente la expresión begin permite ejecutar varias expresiones y retornar un valor.</span></p>
+										</figure>
+									</div>
+
+									<div id="ejemplo4-tab" class="tab-content">
+										<div class="textT5">
+											<h1>VENTAJAS DE UTILIZAR BEGIN</h1>
+										</div>
+										<img id="primero" src="primero.png">
+										<p id="ventaja1"><span>La expresión begin simplifica las funciones.</span></p>
+										<img id="segundo" src="segundo.png">
+										<p id="ventaja2"><span>La expresion begin propone un ordenamiento directo de la evaluación.</span></p>
+										<div class="textT6">
+											<h1>EJEMPLO ANTERIOR CON BEGIN</h1>
+										</div>
+										<div class="cTexto1">(define x 3)<br> (begin (set! x (+ x 2))<br>x)
+										</div>
+										<p id="ejemBegin"><span>Esta función al implementar la expresión begin permite retornar el valor de x, el cual es en este caso 5.</span></p>
+									</div>
+
+									<div id="ejemplo5-tab" class="tab-content">
+										<div class="textT7">
+											<h1>EJEMPLO SET! Y BEGIN</h1>
+										</div>
+
+										<div class="card5 card-secondary5">
+											Considere la función swap-x-y, la cual recibe dos valores y realiza dos Set!.
+										</div>
+										<img id="cinta" src="cinta.png">
+										<div class="cTexto2"><br>(define x 3)<br>(define y 5)<br>(define (swap-x-y x0 y0)<br>(begin<br>(set! x y0)<br>(set! y x0)))<br><br>(swap-x-y x y)
+										</div>
+										<img id="muñecaRosa" src="muñecaRosa.png">
+									</div>
+
+									<div id="ejemplo6-tab" class="tab-content">
+										<div class="textT8">
+											<h1>EVALUACIÓN MANUAL</h1>
+										</div>
+										<p id="evaM"><span><b>1.</b> Debido a que (swap-x-y x y) es una aplicación de función, es necesario evaluar los parámetros o variables. Por lo cual reemplazamos las variables con sus valores (actuales):</span></p>
+
+										<div id="fondo5" class="i18">((define x 3)<br>
+											(define y 5)<br>
+											(define (swap-x-y x0 y0)<br>
+											(begin<br>
+											(set! x y0)<br>
+											(set! y x0)))<br>
+										(swap-x-y 3 5)</div>
+										<img id="programador" src="programador.png">
+
+									</div>
+
+									<div id="ejemplo7-tab" class="tab-content">
+
+										<div class="evidence-description3">
+											<b>2.</b> Después de esto, se actualiza el valor x por el de y y el valor de y por el de x.
+										</div>
+
+										<div class="box2">
+
+											<pre><code>
+												(define x 3)
+												(define y 5)
+												(define (swap-x-y x0 y0)
+												(begin
+												(set! x y0)
+												(set! y x0)))
+
+												(begin
+												(set! x 3)
+												(set! y 5))
+											</code></pre> 
+										</div>
+
+										<img id="compu" src="compu.png">
+									</div>
+									<div id="ejemplo8-tab" class="tab-content">
+
+										<div class="boxx3">
+											<p id="paso4"><span><b>3.</b> Por último, el resultado de la evaluación es (void) porque la última expresión evaluada fue una expresión set!</span></p>
+										</div>
+										<div id="wrap">
+											<div class="box-wrap">
+												<div class="caja2">
+													(define x 5) <br>
+													(define y 3) <br>
+													(define (swap-x-y x0 y0) <br>
+													(begin <br>
+													(set! x y0) <br>
+													(set! y x0))) <br>
+													(void)
+												</div>
+											</div>
+										</div>
+										<img id="nota" src="notaa.png">
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- PESTAÑA 4-->
+						<div id="tab4" class="contentt">
+							<img id="dFunciones" src="dFunciones.png" />
+							<p id="enunciado1"><span>Diseñar funciones con memoria requiere tres pasos importantes:</span></p>	
+							<div class="containerss">
+								<div class="row">
+									<!-- flex-container -->
+									<div class="col-md-12 flex-container">
+										<!-- flex-item -->
+										<div class="flex-item">
+											<div class="flex-item-inner">
+												<!-- card -->
+												<a href="#">
+													<div class="card-front bg-violet">
+														<img id="uno" src="numero1.png">
+													</div>
+													<div class="card-back bg-violet">
+														<p id="paso1" class="desc"><span>Determinar que un programa requiere memoria.</span></p>
+													</div>
+												</a>
+												<!-- /card -->
+											</div>
+										</div>
+										<!-- /flex-item -->
+
+										<!-- flex-item -->
+										<div class="flex-item">
+											<div class="flex-item-inner">
+												<!-- card -->
+												<a href="#">
+													<div class="card-front bg-magenta">
+														<img id="dos" src="numero2.png">
+													</div>
+													<div class="card-back bg-magenta">
+														<p id="paso2" class="desc"><span>Identificar los datos que van en la memoria.</span></p>
+													</div>
+												</a>
+												<!-- /card -->
+											</div>
+										</div>
+										<!-- /flex-item -->
+
+										<!-- flex-item -->
+										<div class="flex-item">
+											<div class="flex-item-inner">
+												<!-- card -->
+												<a href="#">
+													<div class="card-front bg-blue">
+														<img id="dos" src="numero3.png">
+													</div>
+													<div class="card-back bg-blue">
+														<p id="paso3" class="desc"><span>Entender qué servicios se supone que deben modificar la memoria y cuáles deben usar la memoria.</span></p>
+													</div>
+												</a>
+												<!-- /card -->
+											</div>
+										</div>
+										<!-- /flex-item -->  
+									</div>
+									<!-- /flex-container -->
+								</div>
+							</div>
+							<img id="diseño" src="diseñador.png">
+							<img id="diseño2" src="diseñador2.png">
+						</div>
+					</div>
+					<!-- PESTAÑA 5 -->	
+					<div id="tab5" class="contentt">
+						<h6 id="indVideo">Haz clic en los botones &#9658; para observar el video.</h6>
+						<div id="video1"><iframe id="tamañoV" src="https://www.powtoon.com/embed/g6h6JS1Cys8/" frameborder="0"></iframe></div>
+					</div>
+
+					<!--PESTAÑA 6-->
+
+					<div id="tab6" class="contentt">
+						<p id="subtitulo2"><span>EJEMPLO</span></p>
+						<div class="mybox1"><span>Considere una libreta de direcciones (Las que las personas solían guardar antes de que existieran los cuadernos electrónicos). En esta libreta se tiene una variable de estado: address-book, esta variable pretende representar una lista de entradas, donde cada entrada es una lista de dos elementos: un nombre y un número. Para documentar que la libreta de direcciones puede representar solo tales listas, agregamos un contrato de la siguiente manera:
+						</span></div>			
+
+						<img id="libreta" src="libreta.png">
+						<img id="hoja" src="hoja.png">
+
+					</div>
+
+					<!--PESTAÑA 7-->
+
+					<div id="tab7" class="contentt">
+						<p id="texto1"><span>La expresión anterior se expresa correctamente de la siguiente manera:</span></p>
+						<div class="recuadro1 yellow1">(set! address-book empty)</div>
+						<img id="leer" src="leer.png">         
+						<p id="texto2"><span>Ya que se vuelve a establecer address-book en su valor inicial.</span></p>
+						<div id="wrap1">
+							<div class="box-wrap1">
+								<div class="cajaTexto"><b>(set! address-book (cons (list 'Adam 1) address-book))</b> Nos ayuda a comprender mejor cómo las funciones pueden cambiar el valor de address-book de una manera útil. 
+									<br><br> 
+
+									<b>address-book</b> representa una lista de listas, como la siguiente: <b>(cons (list 'Adam 1) address-book)</b> con lo que se construye una lista más larga del tipo correcto. De ahí, la expresión <b>set!</b> simplemente cambia la variable de estado para representar un valor diferente en la clase de <b>(listof (número de símbolo de lista)).</b></div>
+								</div>
+							</div>
+						</div>
+
+						<!--PESTAÑA 8-->
+
+						<div id="tab8" class="contentt">
+							<img id="fMemoria" src="fMemoria.png" />
+							<div class='tengah'>
+								<h1></h1></div>
+								<div class='nota orange'>Después de que hayamos desarrollado contratos y declaraciones de propósito para las variables de estado de un programa, inmediatamente definimos una función que establece las variables de estado en valores apropiados. Llamamos a esta función una <b>FUNCIÓN DE INICIALIZACIÓN</b> o un <b>INICIALIZADOR </b>.</div>
+								<div class="diafragma">
+									<div class="text">El <b>inicializador</b> de un programa es la primera función que se utiliza durante una ejecución. Un programa también puede proporcionar otros medios para invocar el inicializador.</div>
+									<div class="hoja"></div>
+									<div class="hoja giro"></div>
+								</div>
+								<img id="linea" src="linea.png" />
+								<p id="ejFunciones"><span>Ejemplo</span></p>
+								<p id="ejm"><span>Hay un inicializador en el ejemplo de address-book:</span></p>
+								<div class="cajaF box-6">
+									;; init-address-book : -> void
+									(define (init-address-book)
+									(set! address-book empty))
+								</div>
+							</div>
+
+							<!--PESTAÑA 9-->
+
+							<div id="tab9" class="contentt">
+								<h6 id="indVideo2">Haz clic en los botones &#9658; para observar el video.</h6>
+								<div id="video2"><iframe id="tamañoV2" src="https://www.powtoon.com/embed/dCHgFGY9lOd/" frameborder="0"></iframe></div>
+							</div>
+
+							<!--PESTAÑA 10-->
+
+							<div id="tab10" class="contentt">
+								<h6 id="indVideo3">Haz clic en los botones &#9658; para observar el video.</h6>
+								<div id="video3"><iframe id="tamañoV3" src="https://www.powtoon.com/embed/fZijIWbJxhd/" frameborder="0"></iframe></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<script src='https://raw.githubusercontent.com/WickyNilliams/enquire.js/master/dist/enquire.min.js'></script>
+				<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+				<script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js'></script>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+				<script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js'></script>
+				<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+				<script src="page.js"></script>
+				<script  src="step3P4.js"></script>
+				<script  src="tema4.js"></script>
+				<script  src="pestaña2.js"></script>
+				<script  src="boton.js"></script>
+				<script  src="IndexPestaña4.js"></script>
+				<script  src="indexP7.js"></script>
+
+			</body>
+			</html>

@@ -1,91 +1,84 @@
-<!--
-To change this template, choose Tools | Templates
-and open the template in the editor.
--->
 <!DOCTYPE html>
 <html>
-    <head>
-        <title></title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <style type="text/css" media="screen">
-            @import 'styleActividad2.css';
-         </style>
-          <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-          <link type="text/css" href="emparejarP_resources/css/ardoraMemo.css" rel="stylesheet" />
-          <script language="javascript" type="text/javascript" src="emparejarP_resources/js/jquery.js"></script>
-          <script language="javascript" type="text/javascript" src="emparejarP_resources/js/jquery-ui.min.js"></script>
-          <script language="javascript" type="text/javascript" src="emparejarP_resources/js/jquery.ui.touch-punch.min.js"></script>
-          <script language="javascript" type="text/javascript" src="emparejarP_resources/js/ardoraMemoCFG.js"></script>
-          <script language="javascript" type="text/javascript" src="emparejarP_resources/js/ardoraScorm.js"></script>
-          <script language="javascript" type="text/javascript" src="emparejarP_resources/js/ardoraMemo.js"></script>
-          <script language="javascript" type="text/javascript" src="emparejarP_resources/js/ardoraTab.js"></script>
-    </head>
-    <body>
-        <div id="content">
-        <div id="loader">
-          <div class="count">100%</div>
-        </div>
-            <div id ="cabecera">
-                 <img src="iconoPrin4.png"/>
-              <pre><h2>              CAMBIANDO EL ESTADO DE LAS VARIABLES</h2></pre>
-            </div>
-  
-        <div id="escenario">
-                 <pre><h3 id="pointer">    <i class="fa fa-edit"></i> ACTIVIDAD 2</h3> </pre>
-                  <p>Haga clic sobre los recuadros para observar el contenido.</p><img id="iObjetivos" src="iObjetivos.png"/> 
+<head>
+	<title></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<style type="text/css" media="screen">
+	@import 'styleActividad2.css';
+</style>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link type="text/css" href="emparejarP_resources/css/ardoraMemo.css" rel="stylesheet" />
+<script language="javascript" type="text/javascript" src="emparejarP_resources/js/jquery.js"></script>
+<script language="javascript" type="text/javascript" src="emparejarP_resources/js/jquery-ui.min.js"></script>
+<script language="javascript" type="text/javascript" src="emparejarP_resources/js/jquery.ui.touch-punch.min.js"></script>
+<script language="javascript" type="text/javascript" src="emparejarP_resources/js/ardoraMemoCFG.js"></script>
+<script language="javascript" type="text/javascript" src="emparejarP_resources/js/ardoraScorm.js"></script>
+<script language="javascript" type="text/javascript" src="emparejarP_resources/js/ardoraMemo.js"></script>
+<script language="javascript" type="text/javascript" src="emparejarP_resources/js/ardoraTab.js"></script>
+</head>
+<body>
+	<div id="content">
+		<div id="loader">
+			<div class="count">100%</div>
+		</div>
+		<div id ="cabecera">
+			<img src="iconoPrin4.png"/>
+			<pre><h2>              CAMBIANDO EL ESTADO DE LAS VARIABLES</h2></pre>
+		</div>
+		
+		<div id="escenario">
+			<pre><h3 id="pointer">    <i class="fa fa-edit"></i> ACTIVIDAD 2</h3> </pre>
+			<p>Haga clic sobre los recuadros para observar el contenido.</p><img id="iObjetivos" src="iObjetivos.png"/> 
 
-        <div id="contenidoGeneral">
-     	
-     <div id="ardoraMain">
-<audio id="audioFelicitacion">
-<source src="emparejarP_resources/media/APLAUSOS_-_efecto_de_sonido__320__kbps___ytformp3.com_.mp3" type="audio/mp3">
-</audio>
-<audio id="audioIntentos">
-<source src="emparejarP_resources/media/incorrecto___Efecto_de_sonido__320__kbps___ytformp3.com_.mp3" type="audio/mp3">
-</audio>
-<p id="titulo"><span>DEFINICIÓN LEGAL Ó ILEGAL</b></span></p>
-<div id="ardoraEnu"><span>Empareja cada programa con la apreciación <b>legal </b>o<b> ilegal</b>.</span></div>
-  <div id="ardoraAct">
-      <div id="ima11" class="imaCell">
-        <div id="ima11_img" class="imaCell_img"></div>
-      </div>
-      <div id="ima12" class="imaCell">
-        <div id="ima12_img" class="imaCell_img"></div>
-      </div>
-      <div id="ima13" class="imaCell">
-        <div id="ima13_img" class="imaCell_img"></div>
-      </div>
-      <div id="ima14" class="imaCell">
-        <div id="ima14_img" class="imaCell_img"></div>
-      </div>
-      <div id="ima21" class="imaCell">
-        <div id="ima21_img" class="imaCell_img"></div>
-      </div>
-      <div id="ima22" class="imaCell">
-        <div id="ima22_img" class="imaCell_img"></div>
-      </div>
-      <div id="ima23" class="imaCell">
-        <div id="ima23_img" class="imaCell_img"></div>
-      </div>
-      <div id="ima24" class="imaCell">
-        <div id="ima24_img" class="imaCell_img"></div>
-      </div>
-<canvas id="ardoraActCanvas" width="2px" height="2px"></canvas>
-  </div>
-<div id="ardoraTab">
-</div></div>
-<div id="ardoraAlumSCORM"><p></p></div>
-        </div>
-        </div>
+			<div id="contenidoGeneral">
+				
+				<div id="ardoraMain">
+					<audio id="audioFelicitacion">
+						<source src="emparejarP_resources/media/APLAUSOS_-_efecto_de_sonido__320__kbps___ytformp3.com_.mp3" type="audio/mp3">
+						</audio>
+						<audio id="audioIntentos">
+							<source src="emparejarP_resources/media/incorrecto___Efecto_de_sonido__320__kbps___ytformp3.com_.mp3" type="audio/mp3">
+							</audio>
+							<p id="titulo"><span>DEFINICIÓN LEGAL Ó ILEGAL</b></span></p>
+							<div id="ardoraEnu"><span>Empareja cada programa con la apreciación <b>legal </b>o<b> ilegal</b>.</span></div>
+							<div id="ardoraAct">
+								<div id="ima11" class="imaCell">
+									<div id="ima11_img" class="imaCell_img"></div>
+								</div>
+								<div id="ima12" class="imaCell">
+									<div id="ima12_img" class="imaCell_img"></div>
+								</div>
+								<div id="ima13" class="imaCell">
+									<div id="ima13_img" class="imaCell_img"></div>
+								</div>
+								<div id="ima14" class="imaCell">
+									<div id="ima14_img" class="imaCell_img"></div>
+								</div>
+								<div id="ima21" class="imaCell">
+									<div id="ima21_img" class="imaCell_img"></div>
+								</div>
+								<div id="ima22" class="imaCell">
+									<div id="ima22_img" class="imaCell_img"></div>
+								</div>
+								<div id="ima23" class="imaCell">
+									<div id="ima23_img" class="imaCell_img"></div>
+								</div>
+								<div id="ima24" class="imaCell">
+									<div id="ima24_img" class="imaCell_img"></div>
+								</div>
+								<canvas id="ardoraActCanvas" width="2px" height="2px"></canvas>
+							</div>
+							<div id="ardoraTab">
+							</div></div>
+							<div id="ardoraAlumSCORM"><p></p></div>
+						</div>
+					</div>
+					
+					<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+					<script  src="actividad.js"></script>
+					<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+					<script  src="page.js"></script>
 
-         <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
-
-  
-
-    <script  src="actividad.js"></script>
-     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
-          <script  src="page.js"></script>
-
-    </body>
-</html>
+				</body>
+				</html>
